@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./index_style.css">
+    <title>CAVE</title>
+</head>
+
+<body>
+
+        <header class="header">
+            <a href="../index.html">
+              <img class="logo" src="./img/img_logo_white.png" />
+            </a>
+      
+            <div class="container">
+              <ul class="list">
+                <li class="list-item">
+                  <a href="./index.html">主頁</a>
+                </li>
+                <li class="list-item">
+                  <a href="./About/About.html">關於</a>
+                </li>
+                <li class="list-item">
+                  <a href="../Contact/Contact.html">聯絡我們</a>
+                </li>
+              </ul>
+            </div>
+          </header>
+    
+    <div class="content">
+        <h1>水晶洞!</h1>
+        <p>水晶能釋放穩定的振動，有助建立體內平衡，擁有強大的療癒力量。
+            天地間，其實萬事萬物都有能量。一棵樹、一滴水、一顆石頭，都
+            有各自的能量，或者換一種說法，就是「磁場」。佛教曾說，眾生
+            皆有佛性，佛性就是能量。人都有成佛的性能，你能說沒有能量嗎？
+            詳情請見寶石之國。</p>
+            <a href="About/About.html" class="btn">></a>
+    </div>
+
+    <div class="slider">
+      <div class="slides">
+        <input type="radio" name="radio-btn" id="radio1">
+        <input type="radio" name="radio-btn" id="radio2">
+        <input type="radio" name="radio-btn" id="radio3">
+        <input type="radio" name="radio-btn" id="radio4">
+        <input type="radio" name="radio-btn" id="radio5">
+
+        <div class="slide first">
+          <img src="./img/index1.png" alt="">
+        </div>
+        <div class="slide">
+          <img src="./img/index2.png" alt="">
+        </div>
+        <div class="slide">
+          <img src="./img/index3.png" alt="">
+        </div>
+        <div class="slide">
+          <img src="./img/index4.png" alt="">
+        </div>
+        <div class="slide">
+          <img src="./img/index5.png" alt="">
+        </div>
+
+        <div class="navigation-auto">
+          <div class="auto-btn1"></div>
+          <div class="auto-btn2"></div>
+          <div class="auto-btn3"></div>
+          <div class="auto-btn4"></div>
+          <div class="auto-btn5"></div>
+        </div>
+      </div>
+      <div class="navigation-manual">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
+        <label for="radio4" class="manual-btn"></label>
+        <label for="radio5" class="manual-btn"></label>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+    var counter = 1;
+    setInterval(function(){
+      document.getElementById('radio' + counter).checked = true;
+      counter++;
+      if(counter > 5){
+        counter = 1;
+      }
+    }, 5000);
+    </script>
+
+
+</body>
+</html>
